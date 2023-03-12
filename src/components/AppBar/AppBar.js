@@ -5,7 +5,7 @@ import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
+import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
@@ -160,7 +160,10 @@ function ResponsiveAppBar() {
             </Typography>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <AccountBoxIcon
+                  alt="Remy Sharp"
+                  src="/static/images/avatar/2.jpg"
+                />
               </IconButton>
             </Tooltip>
 
