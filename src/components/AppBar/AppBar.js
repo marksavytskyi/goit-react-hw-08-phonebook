@@ -8,7 +8,7 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
 import Container from '@mui/material/Container';
-import AccountBoxIcon from '@mui/icons-material/AccountBox';
+import Person2Icon from '@mui/icons-material/Person2';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
@@ -63,7 +63,7 @@ function ResponsiveAppBar() {
             variant="h6"
             noWrap
             component={Link}
-            to="/login"
+            to="/"
             sx={{
               mr: 4,
               display: { xs: 'none', md: 'flex' },
@@ -160,7 +160,8 @@ function ResponsiveAppBar() {
             </Typography>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <AccountBoxIcon
+                <Person2Icon
+                  fontSize="large"
                   alt="Remy Sharp"
                   src="/static/images/avatar/2.jpg"
                 />

@@ -7,6 +7,7 @@ import { refresh } from 'redux/auth/operations';
 import { useAuth } from './hooks/useAuth';
 import { RestrictedRoute } from './RestrictedRoute';
 import { PrivateRoute } from './PrivateRoute';
+import Home from './Home/Home';
 
 const RegisterPage = lazy(() => import('../Pages/Register'));
 const LoginPage = lazy(() => import('../Pages/Login'));
@@ -25,6 +26,7 @@ const App = () => {
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path="/" element={<SharedLayout />}>
+            <Route index element={<Home />} />
             <Route
               path="register"
               element={
