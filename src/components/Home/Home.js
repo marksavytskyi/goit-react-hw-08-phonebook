@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
  * Credit: https://flutter.dev/
  */
 export default function Home() {
-  const [color, setColor] = React.useState('primary');
+  const [color] = React.useState('primary');
   return (
     <Paper
       variant="solid"
